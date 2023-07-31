@@ -1,33 +1,20 @@
-import { useEffect, useState } from 'react';
+import { Alert, AlertTitle } from '@mui/material';
+import { useContext } from 'react';
+import OfflineContext from '../../contexts/OflineContext';
 
 const Offline = () => {
-  const [isOnline, setIsOnline] = useState(true);
+  const { isOffline } = useContext(OfflineContext);
 
-  const setOnline = () => setIsOnline(true);
-  const setOffline = () => setIsOnline(false);
-
-  useEffect(() => {
-    window.addEventListener('online', setOnline);
-    window.addEventListener('offline', setOffline);
-
-    return () => {
-      window.addEventListener('online', setOnline);
-      window.addEventListener('offline', setOffline);
-    };
-  }, []);
-
-  return isOnline ? null : (
-    <article>
-      <section>
-        <header>
-          <h1>You are offline</h1>
-        </header>
-        <main>
-          <span>App needs internet to start working</span>
-        </main>
-      </section>
-    </article>
-  );
+  return (
+    isOffline
+      ? (
+        <Alert severity="warning">
+          <AlertTitle>You are offline</AlertTitle>
+          App needs internet to start working!
+        </Alert>
+      )
+      : null
+  )
 };
 
 export default Offline;

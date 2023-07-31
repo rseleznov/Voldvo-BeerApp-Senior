@@ -12,4 +12,30 @@ type TYPE =
 
 type SORT = 'asc' | 'desc';
 
-export type { TYPE, SORT };
+type SORT_BY =
+  | 'id'
+  | 'name'
+  | 'brewery_type'
+  | 'address_1'
+  | 'address_2'
+  | 'address_3'
+  | 'city'
+  | 'state_province'
+  | 'postal_code'
+  | 'country'
+  | 'longitude'
+  | 'latitude'
+  | 'phone'
+  | 'website_url'
+  | 'state'
+  | 'street';
+
+type ALIGN =
+  | 'center'
+  | 'left'
+  | 'right'
+  | 'justify'
+  | 'inherit'
+  | undefined;
+
+export type { TYPE, SORT, SORT_BY, ALIGN };

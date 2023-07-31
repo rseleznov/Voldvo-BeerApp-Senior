@@ -1,0 +1,12 @@
+.paper {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.label {
+    color: darkgray;
+}
+
+.linearProgress {
+    height: 4px;
+}

@@ -1,0 +1,8 @@
+.linearProgress {
+    height: 4px;
+}
+
+.tableRow {
+    cursor: pointer;
+    display: flex;
+}

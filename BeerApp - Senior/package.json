@@ -8,10 +8,14 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
+    "@types/leaflet": "^1.9.3",
     "axios": "^1.4.0",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1"
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.11.1",
+    "react-svg-loader": "^3.0.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

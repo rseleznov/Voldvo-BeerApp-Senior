@@ -2,6 +2,16 @@ import { createTheme } from '@mui/material/styles';
 import { green, blue } from '@mui/material/colors';
 
 const theme = createTheme({
+  typography: {
+    h1: {
+      fontSize: 'xx-large',
+    },
+    h3: {
+      fontWeight: 'bold',
+      fontSize: 'large',
+      textTransform: 'uppercase',
+    },
+  },
   palette: {
     primary: {
       main: blue[800],
@@ -17,6 +27,13 @@ const theme = createTheme({
           textDecoration: 'none',
         },
       },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          padding: '20px',
+        }
+      }
     },
   },
 });
